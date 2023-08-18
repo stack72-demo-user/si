@@ -21,6 +21,7 @@
         :disabled="changeSetsStore.headSelected"
         @change="updateFuncCode"
         @explicitSave="execFunc"
+        :key="Math.floor(Math.random() * 1000)"
       />
     </template>
     <ErrorMessage
